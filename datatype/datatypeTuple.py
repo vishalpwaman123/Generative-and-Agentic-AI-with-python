@@ -1,4 +1,4 @@
-full_name = ("vishal", "prabhakar", "waman")
+full_name = ("vishal", "prabhakar", "waman") # Tuple is Immutable
 
 (first_name, middle_name, last_name) = full_name
 
