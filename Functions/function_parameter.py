@@ -34,3 +34,26 @@ def special_chai(*ingredients, **extras):
     print("Extra : ",extras)
 
 special_chai("Masala", "Irani", sweetener="Honey", form="yes")
+
+
+###################### EXAMPLE 5 ###########################
+
+def chai_order(order=[]):
+    order.append("Masala")
+    print(order)
+
+chai_order()
+chai_order()
+
+###################### EXAMPLE 6 ##########################
+
+def chai_orders(order = None):
+    if order is None:
+        order=[]
+    
+    print(order)
+
+chai_orders()
+chai_orders()
+
+####################### END ########################
