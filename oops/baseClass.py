@@ -4,8 +4,8 @@ class Chai:
         self.chai_type = chai_type
         self.chai_amount = chai_amount
 
-    def print_chai_detail(self):
-        print(f"Chai : {self.chai_type}, amount : {self.chai_amount}")
+    def print_chai_basic_detail(self):
+        return f"Chai : {self.chai_type}, amount : {self.chai_amount}"
 
 # Example 1
 
@@ -31,6 +31,9 @@ class GingerChai(Chai):
     def __init__(self, chai_type, chai_amount, spice_level):
         super().__init__(chai_type, chai_amount)
         self.spice_level = spice_level
+
+    def print_chai_detail(self):
+        print(super().print_chai_basic_detail() + f", Spice level : {self.spice_level}" )
 
 ginger_Chai = GingerChai("Ginger", 1, "More")
 ginger_Chai.print_chai_detail();
