@@ -16,5 +16,5 @@ class Tealeaf:
 
 leaf = Tealeaf(5)
 print(f"Age : {leaf.age}")
-leaf.age = 11
+leaf.age = 10
 print(f"Age : {leaf.age}")
