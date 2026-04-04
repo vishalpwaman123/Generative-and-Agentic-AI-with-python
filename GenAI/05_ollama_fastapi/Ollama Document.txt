@@ -1,0 +1,15 @@
+Ollama 
+
+1] download Ollama
+2] download docker
+
+Pull & run Ollama latest Image
+command 1 : docker run ollama/ollama
+command 2 : docker run -d -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
+
+Pull & run OpenwebUI latest Image
+command 1 : docker pull ghcr.io/open-webui/open-webui:main
+command 2 : docker run -d -p 3000:8080 -v open-webui:/app/backend/data --name open-webui ghcr.io/open-webui/open-webui:main
+
+
+for model information : https://ollama.com/
